@@ -1,8 +1,7 @@
 #include<stdio.h>
 main()
 {
-	int i,n,sum=0;
-	
+	int i,n,sum=0,average;
 	printf("Size of array = ");
 	scanf("%d",&n);
 	
@@ -17,5 +16,10 @@ main()
 	{
 		sum=sum+a[i];
 	}
-	printf("sum of all array element = %d",sum);
+	for(i=0;i<n;i++)
+	{
+		average=sum/n;
+	}
+	
+	printf("average of array values = %d",average);
 }
